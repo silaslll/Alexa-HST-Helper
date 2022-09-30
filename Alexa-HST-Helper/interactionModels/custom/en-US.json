@@ -1,0 +1,758 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "e. clutch",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "HSTNavigationIntent",
+          "slots": [
+            {
+              "name": "destination",
+              "type": "HSTNode"
+            },
+            {
+              "name": "source",
+              "type": "HSTNode"
+            }
+          ],
+          "samples": [
+            "{destination} and I need to go to {source}",
+            "{destination} to {source}",
+            "I am at {destination} and I need to get to {source}",
+            "how do i get from {destination} to {source}",
+            "how do i get to {source} from {destination}"
+          ]
+        },
+        {
+          "name": "HSTAskDirectionsIntent",
+          "slots": [],
+          "samples": [
+            "I need direction",
+            "I need direction in hst building ",
+            "I need direction in hst ",
+            "I need to go somewhere in hst building",
+            "I need to go somewhere in hst ",
+            "I need help to find my way in hst building ",
+            "I need help to find my way in hst ",
+            "I need directions in hst ",
+            "I need directions in hst building ",
+            "I need to find my way in hst ",
+            "I need to find my way in hst building ",
+            "Please give me directions",
+            "I want you to guide me somewhere",
+            "I want directions"
+          ]
+        },
+        {
+          "name": "HSTStaffLocatorIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "HST_LAST_NAME"
+            }
+          ],
+          "samples": [
+            "I want to know {name} office ",
+            "I want to know {name} location ",
+            "I want to know where {name} is ",
+            "to find {name} in the building ",
+            "to find {name} in HST ",
+            "to find {name} ",
+            "for {name} location in HST building ",
+            "for {name} location in HST ",
+            "for {name} location in the building ",
+            "for {name} location ",
+            "{name} location ",
+            "{name} office",
+            "{name}",
+            "I need to find {name} ",
+            "where can I find mrs {name}",
+            "where can I find mister {name}",
+            "where can I find professor {name}",
+            "what room is {name} office",
+            "in what room is {name}",
+            "where is {name}",
+            "where can i find professor {name} office",
+            "where can i find {name} office",
+            "where can i find {name}"
+          ]
+        },
+        {
+          "name": "Jeanne",
+          "slots": [],
+          "samples": [
+            "how can I meet the dean",
+            "How do I make an appointment with the Dean ",
+            "How do I make an appointment with Dean Dolan",
+            "How can I book a room in HST",
+            "How can I book a space in HST",
+            "I need to learn more about room reservations ",
+            "I need to learn more about the deans ",
+            "I need to learn more about faculty searches ",
+            "I need to learn more about college of health ",
+            "I need to learn more about work study "
+          ]
+        },
+        {
+          "name": "ReviewIntent",
+          "slots": [],
+          "samples": [
+            "I want to give feedback",
+            "I want to leave a review"
+          ]
+        },
+        {
+          "name": "HSTAssistantIntent",
+          "slots": [
+            {
+              "name": "type",
+              "type": "Assistant"
+            }
+          ],
+          "samples": [
+            "Who can I speak to about {type}",
+            "Who posts to social media for {type}",
+            "Who manages {type}",
+            "Who do I speak to about {type}",
+            "who is {type}",
+            "Who handles {type}",
+            "where can I find {type}",
+            "Where is {type}",
+            " I need to learn more about {type}",
+            "Who runs {type}",
+            "what is {type}",
+            "Who can I speak with about {type}",
+            "Who is the director of {type}",
+            "director of {type}",
+            "{type}",
+            "where can I find director of the {type}"
+          ]
+        },
+        {
+          "name": "MenuIntent",
+          "slots": [
+            {
+              "name": "option",
+              "type": "menuOption",
+              "samples": [
+                "I need help with {option}",
+                "{option}"
+              ]
+            }
+          ],
+          "samples": [
+            "I need help with {option}",
+            "menu",
+            "{option}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "restrooms"
+              }
+            },
+            {
+              "name": {
+                "value": "room 145"
+              }
+            },
+            {
+              "name": {
+                "value": "entrance 6"
+              }
+            },
+            {
+              "name": {
+                "value": "entrance 5"
+              }
+            },
+            {
+              "name": {
+                "value": "entrance 4"
+              }
+            },
+            {
+              "name": {
+                "value": "entrance 3"
+              }
+            },
+            {
+              "name": {
+                "value": "entrance 2"
+              }
+            },
+            {
+              "name": {
+                "value": "entrance 1"
+              }
+            }
+          ],
+          "name": "HSTNode"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "miwa"
+              }
+            },
+            {
+              "name": {
+                "value": "schultz"
+              }
+            },
+            {
+              "name": {
+                "value": "rangarajan"
+              }
+            },
+            {
+              "name": {
+                "value": "jackson"
+              }
+            },
+            {
+              "name": {
+                "value": "fernandez"
+              }
+            },
+            {
+              "name": {
+                "value": "frounfelker"
+              }
+            },
+            {
+              "name": {
+                "value": "holten-andersen"
+              }
+            },
+            {
+              "name": {
+                "value": "pashuck"
+              }
+            },
+            {
+              "name": {
+                "value": "mcintire"
+              }
+            },
+            {
+              "name": {
+                "value": "gilcrest"
+              }
+            },
+            {
+              "name": {
+                "value": "reichmanis"
+              }
+            },
+            {
+              "name": {
+                "value": "wakeel"
+              }
+            },
+            {
+              "name": {
+                "value": "baltrusaitis"
+              }
+            },
+            {
+              "name": {
+                "value": "mcintosh"
+              }
+            },
+            {
+              "name": {
+                "value": "choi"
+              }
+            },
+            {
+              "name": {
+                "value": "brown"
+              }
+            },
+            {
+              "name": {
+                "value": "snyder"
+              }
+            },
+            {
+              "name": {
+                "value": "mcandrew"
+              }
+            },
+            {
+              "name": {
+                "value": "ekuma"
+              }
+            },
+            {
+              "name": {
+                "value": "khan"
+              }
+            },
+            {
+              "name": {
+                "value": "jagota"
+              }
+            },
+            {
+              "name": {
+                "value": "messina"
+              }
+            },
+            {
+              "name": {
+                "value": "topp"
+              }
+            },
+            {
+              "name": {
+                "value": "hoelscher"
+              }
+            },
+            {
+              "name": {
+                "value": "gusmano"
+              }
+            },
+            {
+              "name": {
+                "value": "buss"
+              }
+            },
+            {
+              "name": {
+                "value": "dolan"
+              }
+            },
+            {
+              "name": {
+                "value": "daley"
+              }
+            },
+            {
+              "name": {
+                "value": "ramamurthi"
+              }
+            },
+            {
+              "name": {
+                "value": "liu"
+              }
+            },
+            {
+              "name": {
+                "value": "cheol shin"
+              }
+            },
+            {
+              "name": {
+                "value": "he"
+              }
+            },
+            {
+              "name": {
+                "value": "string"
+              }
+            },
+            {
+              "name": {
+                "value": "buff"
+              }
+            },
+            {
+              "name": {
+                "value": "shriver"
+              }
+            },
+            {
+              "name": {
+                "value": "yasko"
+              }
+            },
+            {
+              "name": {
+                "value": "marvel"
+              }
+            },
+            {
+              "name": {
+                "value": "thorpe"
+              }
+            },
+            {
+              "name": {
+                "value": "stanescu"
+              }
+            }
+          ],
+          "name": "HST_LAST_NAME"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "expense reimbursements"
+              }
+            },
+            {
+              "name": {
+                "value": "budget from college of health"
+              }
+            },
+            {
+              "name": {
+                "value": "research in the college of health"
+              }
+            },
+            {
+              "name": {
+                "value": "faculty research"
+              }
+            },
+            {
+              "name": {
+                "value": "sponsored research"
+              }
+            },
+            {
+              "name": {
+                "value": "funding research"
+              }
+            },
+            {
+              "name": {
+                "value": "research expenses"
+              }
+            },
+            {
+              "name": {
+                "value": "on campus research for the college of health"
+              }
+            },
+            {
+              "name": {
+                "value": "research opportunities"
+              }
+            },
+            {
+              "name": {
+                "value": "college of health research"
+              }
+            },
+            {
+              "name": {
+                "value": "undergraduate programs"
+              }
+            },
+            {
+              "name": {
+                "value": "undergraduate admissions"
+              }
+            },
+            {
+              "name": {
+                "value": "Courses"
+              }
+            },
+            {
+              "name": {
+                "value": "graduate programs"
+              }
+            },
+            {
+              "name": {
+                "value": "graduate admissions"
+              }
+            },
+            {
+              "name": {
+                "value": "Internships"
+              }
+            },
+            {
+              "name": {
+                "value": "Majors"
+              }
+            },
+            {
+              "name": {
+                "value": "Minors"
+              }
+            },
+            {
+              "name": {
+                "value": "Declarations"
+              }
+            },
+            {
+              "name": {
+                "value": "MPH"
+              }
+            },
+            {
+              "name": {
+                "value": "Associate dean for academic programs"
+              }
+            },
+            {
+              "name": {
+                "value": "academic programs"
+              }
+            },
+            {
+              "name": {
+                "value": "social media"
+              }
+            },
+            {
+              "name": {
+                "value": "advertising"
+              }
+            },
+            {
+              "name": {
+                "value": "Communications"
+              }
+            },
+            {
+              "name": {
+                "value": "social media for COH"
+              }
+            },
+            {
+              "name": {
+                "value": "COH newsletter"
+              }
+            },
+            {
+              "name": {
+                "value": "COH media relations"
+              }
+            },
+            {
+              "name": {
+                "value": "graduate marketing"
+              }
+            },
+            {
+              "name": {
+                "value": "undergraduate marketing"
+              }
+            },
+            {
+              "name": {
+                "value": "advertising opportunities"
+              }
+            },
+            {
+              "name": {
+                "value": "  marketing"
+              }
+            },
+            {
+              "name": {
+                "value": "advertisement"
+              }
+            },
+            {
+              "name": {
+                "value": "faculty affairs"
+              }
+            },
+            {
+              "name": {
+                "value": "Associate dean for faculty and staff"
+              }
+            },
+            {
+              "name": {
+                "value": "faculty and staff"
+              }
+            },
+            {
+              "name": {
+                "value": "Research and Graduate studies"
+              }
+            },
+            {
+              "name": {
+                "value": "Associate Dean for Research and Graduate studies"
+              }
+            },
+            {
+              "name": {
+                "value": "director for Research and Graduate studies"
+              }
+            },
+            {
+              "name": {
+                "value": "children\u0027s health institute"
+              }
+            },
+            {
+              "name": {
+                "value": "children\u0027s environmental precision health institute"
+              }
+            },
+            {
+              "name": {
+                "value": "HDW"
+              }
+            },
+            {
+              "name": {
+                "value": "Health Data Warehouse"
+              }
+            },
+            {
+              "name": {
+                "value": "IIS"
+              }
+            },
+            {
+              "name": {
+                "value": "Institute for Indigenous Studies"
+              }
+            },
+            {
+              "name": {
+                "value": "IHPP"
+              }
+            },
+            {
+              "name": {
+                "value": "Institute for Health Policy and Politics"
+              }
+            },
+            {
+              "name": {
+                "value": "one card expenses"
+              }
+            },
+            {
+              "name": {
+                "value": "one card reimbursements"
+              }
+            },
+            {
+              "name": {
+                "value": " Co-sponsorships"
+              }
+            },
+            {
+              "name": {
+                "value": " sponsorships"
+              }
+            },
+            {
+              "name": {
+                "value": "paycheck"
+              }
+            },
+            {
+              "name": {
+                "value": "master in population health"
+              }
+            },
+            {
+              "name": {
+                "value": "P h d programs"
+              }
+            },
+            {
+              "name": {
+                "value": "Graduate director"
+              }
+            },
+            {
+              "name": {
+                "value": "graduate population health program"
+              }
+            }
+          ],
+          "name": "Assistant"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Way-Finding"
+              }
+            },
+            {
+              "name": {
+                "value": "COH Desk Assistant"
+              }
+            },
+            {
+              "name": {
+                "value": "Staff Locator"
+              }
+            }
+          ],
+          "name": "menuOption"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "MenuIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "option",
+              "type": "menuOption",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.901963508747.1441930807808"
+              }
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.901963508747.1441930807808",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I can help with Staff Locator, COH Desk Assistant, and Way-Finding, which one do you need "
+          }
+        ]
+      }
+    ]
+  },
+  "version": "48"
+}

@@ -1,5 +1,5 @@
 # Alexa-HST-Helper
 
 
-Our project:
+Project Info:
 https://creativeinquiry.lehigh.edu/mountaintop-programs/campus-sustainable-impact-fellowship
